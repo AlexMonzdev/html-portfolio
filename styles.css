@@ -1,4 +1,90 @@
-html {
-    background-color: aqua;
-}
-.photo { width: 150px; height: 155px; }
+body {
+    padding: 50px;
+    margin: 50px;
+    background: gray;
+  }
+
+  .container {
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas:
+      "foto header header header header header"
+      "aside aside main main main main"
+      "footer footer footer footer footer footer";
+      text-align: justify;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .foto {
+    background: rgb(255, 255, 255);
+    grid-area: foto;
+  }
+
+  img{
+    width: 15rem;
+  }
+
+  .header {
+    background: rgb(54, 203, 138);
+    grid-area: header;
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    background: rgb(238, 227, 227);
+    grid-area: footer;
+    text-align: justify;
+  }
+
+  .aside {
+    background: rgb(255, 255, 255);
+    grid-area: aside;
+    text-align: justify;
+
+  }
+
+  .expe {
+    background: rgb(255, 255, 255);
+    grid-area: main;
+  }
+
+  h3 {
+    margin: 50px;
+    text-align: justify;
+  
+  }
+
+  .bio {
+    margin: 50px;
+    text-align: justify;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  .footer{
+    height: 4vh;
+    text-align: center;
+  }
+
+  h1{
+    color:white;
+    text-shadow: 20px 20px 7px grey;
+  }
+
+  p {
+    margin: 1rem;
+    margin-right: 3rem;
+    text-align: justify;
+  }
